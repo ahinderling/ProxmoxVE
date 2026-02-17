@@ -1,0 +1,40 @@
+{
+  "name": "acme-dns",
+  "slug": "acme-dns",
+  "categories": [
+    0
+  ],
+  "date_created": "2026-02-18",
+  "type": "ct",
+  "updateable": true,
+  "privileged": false,
+  "interface_port": 443,
+  "documentation": "https://github.com/acme-dns/acme-dns",
+  "website": "https://github.com/acme-dns/acme-dns",
+  "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons@main/webp/appname.webp",
+  "config_path": "/etc/acme-dns/config.cfg",
+  "description": "Self hosted API Server for certbot DNS challenge.",
+  "install_methods": [
+    {
+      "type": "default",
+      "script": "ct/acme-dns.sh",
+      "resources": {
+        "cpu": 2,
+        "ram": 2048,
+        "hdd": 8,
+        "os": "Debian",
+        "version": "13"
+      }
+    }
+  ],
+  "default_credentials": {
+    "username": null,
+    "password": null
+  },
+  "notes": [
+    {
+      "text": "Change the default password after first login!",
+      "type": "warning"
+    }
+  ]
+}
